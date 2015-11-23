@@ -23,17 +23,17 @@
 	-moz-osx-font-smoothing: grayscale;
 
 	font-size: 45px;
-	color: rgba(49, 77, 75, .9);
+	color: #333230;
 	text-shadow: 1px, 1px, 2px, #000;
 }
 
-[class^="icon-"]:hover, [class*=" icon-"]:hover,
+/* [class^="icon-"]:hover, [class*=" icon-"]:hover,
 [class^="icon-"]:active, [class*=" icon-"]:active,
 [class^="icon-"]:focus, [class*=" icon-"]:focus {
-	color: rgb(49, 77, 75);
+	color: #333230;
 	text-shadow: 1px, 1px, 2px, #000;
 
-}
+} */
 
 
 .icon-mail:before {

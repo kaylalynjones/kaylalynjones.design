@@ -19,6 +19,11 @@ main {
   top: 70%;
   transform: translateY(-50%);
 }
+@media (max-width: 600px) {
+  main {
+    top: 40%;
+  }
+}
 .info {
   background-color: rgba(49, 77, 75, .9);
   box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -46,4 +51,15 @@ h2 {
 .social a {
   display: block;
   text-decoration: none;
+}
+
+a.resume-link {
+  text-decoration: none;
+  color: antiquewhite;
+  font-size: 20px;
+}
+a.resume-link:hover,
+a.resume-link:active,
+a.resume-link:focus {
+  text-decoration: underline;
 }
