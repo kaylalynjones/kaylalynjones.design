@@ -1,0 +1,43 @@
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: 'Raleway', sans-serif;
+  background-image: url('images/typewriter.jpg');
+  background-size: cover;
+}
+main {
+  display: flex;
+  flex-flow: column nowrap;
+  max-width: 640px;
+  margin: 300px auto 0;
+  color: antiquewhite;
+}
+.info {
+  background-color: rgba(49, 77, 75, .9);
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 30px;
+  flex: 1 1 auto;
+}
+h1 {
+  font-size: 32px;
+  margin-bottom: 0;
+
+}
+h2 {
+  font-weight: 300;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+.social {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+
+}
+
+.social a {
+  display: block;
+  text-decoration: none;
+}
