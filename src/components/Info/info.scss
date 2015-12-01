@@ -1,0 +1,28 @@
+.info {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  &__header {
+    margin-top: 60px;
+  }
+  &__block {
+    display: flex;
+    flex-direction: row;
+
+    &__resume {
+      width: 50%;
+      text-align: center;
+      padding-top: 20px;
+    }
+    &__links {
+      padding-right: 60px;
+      text-align: right;
+      width: 50%;
+    }
+  }
+}
+#circle-bkgrd-top {
+  fill: red;
+}
