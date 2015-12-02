@@ -1,13 +1,12 @@
 module.exports = {
   entry: './src/index.jsx',
   output: {
-    path: __dirname + '/public',
+    path: __dirname,
     filename: 'bundle.js'
   },
   devServer: {
     inline: true,
-    port: 8080,
-    contentBase: './public'
+    port: 8080
   },
 
   module: {
