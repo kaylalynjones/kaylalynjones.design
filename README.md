@@ -1,5 +1,5 @@
 # Portfolio
-React, CSS3, svg manipulation
+React, CSS3, svg
 
 ### Spin 'er Up
 Install Dependencies
