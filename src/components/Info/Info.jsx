@@ -6,6 +6,7 @@ export default class Info extends React.Component {
   render() {
     return (
       <section className="info">
+        <h4 className="info-temp__header align-center">Kayla Jones</h4>
         <h4 className="info__header light-text align-center">Front End Developer | Interaction Designer</h4>
         <section className="info__block">
           <div className="info__block__resume">
@@ -37,7 +38,7 @@ export default class Info extends React.Component {
               <a href="https://www.linkedin.com/in/kaylalynjones"
                 target="_blank"
                 className="icon-linkedin">
-                LinkedIn &nbsp; 
+                LinkedIn &nbsp;
               </a>
             </p>
           </div>

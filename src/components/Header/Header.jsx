@@ -1,10 +1,13 @@
 import React from 'react';
+import './header.scss';
 
 export default class Header extends React.Component {
   render() {
     return (
-      <div>
-        <h1>Kayla Jones</h1>
+      <div className="title-svg-container">
+        <object className="title-svg" type="image/svg+xml" data="/images/kayla-jones.svg">
+          <img src="/images/kayla-jones.png" alt="resume icon and link" />
+        </object>
       </div>
     );
   }

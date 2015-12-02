@@ -1,0 +1,12 @@
+.title-svg-container {
+  position: relative;
+}
+.title-svg {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; /* only required for <img /> */
+  z-index: -1000;
+  margin-top: 100px;
+}
