@@ -3,12 +3,13 @@ $height: 300px;
 $thickness: 4px;
 
 .card-container {
+  position:fixed;
   perspective: 800px;
 	perspective-origin: 50% -100px;
-  margin: 0 auto;
-  padding: 17% 0;
-  padding: 25vh 0;
   width: $width;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
 }
 
 .card {

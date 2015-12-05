@@ -19744,13 +19744,23 @@
 	var Card = (function (_React$Component) {
 	  _inherits(Card, _React$Component);
 
-	  function Card() {
+	  function Card(props) {
 	    _classCallCheck(this, Card);
 
-	    return _possibleConstructorReturn(this, Object.getPrototypeOf(Card).apply(this, arguments));
+	    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(Card).call(this, props));
+
+	    _this.state = { scrollPosition: 0 };
+	    return _this;
 	  }
 
 	  _createClass(Card, [{
+	    key: 'handleScroll',
+	    value: function handleScroll() {
+	      var curentPosition = window.scrollY;
+	      console.log(curentPosition);
+	      // document.getElementById('app') // element that scrolls
+	    }
+	  }, {
 	    key: 'render',
 	    value: function render() {
 	      return _react2.default.createElement(
@@ -20496,7 +20506,7 @@
 
 
 	// module
-	exports.push([module.id, ".card-container {\n  perspective: 800px;\n  perspective-origin: 50% -100px;\n  margin: 0 auto;\n  padding: 17% 0;\n  padding: 25vh 0;\n  width: 500px; }\n\n.card {\n  position: relative;\n  width: 500px;\n  height: 300px;\n  transform-style: preserve-3d;\n  box-shadow: 0px 5px 20px 2px rgba(0, 0, 0, 0.3);\n  will-change: contents;\n  animation: spin 5s linear;\n  animation-delay: 2s;\n  animation-fill-mode: forwards; }\n  .card .top,\n  .card .bottom,\n  .card .left,\n  .card .right,\n  .card .back,\n  .card .front {\n    position: absolute;\n    width: 100%;\n    height: 100%; }\n  .card .top,\n  .card .bottom {\n    width: 500px;\n    height: 4px; }\n  .card .left,\n  .card .right {\n    height: 300px;\n    width: 4px; }\n  .card .back,\n  .card .front {\n    width: 500px;\n    height: 300px; }\n\n.back {\n  transform: rotateY(180deg);\n  background-color: #f1f1f1; }\n\n.right {\n  transform: rotateY(-270deg) translateZ(496px);\n  transform-origin: top right;\n  background-color: #C59A5A; }\n\n.left {\n  transform: rotateY(270deg);\n  transform-origin: center left;\n  background-color: #C59A5A; }\n\n.top {\n  transform: rotateX(-90deg) translateY(-4px);\n  transform-origin: top center;\n  background-color: #C59A5A; }\n\n.bottom {\n  transform: translateY(296px) translateZ(4px) rotateX(90deg);\n  transform-origin: bottom center;\n  background-color: #C59A5A; }\n\n.front {\n  transform: translateZ(4px);\n  background-color: #f1f1f1; }\n", ""]);
+	exports.push([module.id, ".card-container {\n  position: fixed;\n  perspective: 800px;\n  perspective-origin: 50% -100px;\n  width: 500px;\n  left: 50%;\n  top: 50%;\n  transform: translateX(-50%) translateY(-50%); }\n\n.card {\n  position: relative;\n  width: 500px;\n  height: 300px;\n  transform-style: preserve-3d;\n  box-shadow: 0px 5px 20px 2px rgba(0, 0, 0, 0.3);\n  will-change: contents;\n  animation: spin 5s linear;\n  animation-delay: 2s;\n  animation-fill-mode: forwards; }\n  .card .top,\n  .card .bottom,\n  .card .left,\n  .card .right,\n  .card .back,\n  .card .front {\n    position: absolute;\n    width: 100%;\n    height: 100%; }\n  .card .top,\n  .card .bottom {\n    width: 500px;\n    height: 4px; }\n  .card .left,\n  .card .right {\n    height: 300px;\n    width: 4px; }\n  .card .back,\n  .card .front {\n    width: 500px;\n    height: 300px; }\n\n.back {\n  transform: rotateY(180deg);\n  background-color: #f1f1f1; }\n\n.right {\n  transform: rotateY(-270deg) translateZ(496px);\n  transform-origin: top right;\n  background-color: #C59A5A; }\n\n.left {\n  transform: rotateY(270deg);\n  transform-origin: center left;\n  background-color: #C59A5A; }\n\n.top {\n  transform: rotateX(-90deg) translateY(-4px);\n  transform-origin: top center;\n  background-color: #C59A5A; }\n\n.bottom {\n  transform: translateY(296px) translateZ(4px) rotateX(90deg);\n  transform-origin: bottom center;\n  background-color: #C59A5A; }\n\n.front {\n  transform: translateZ(4px);\n  background-color: #f1f1f1; }\n", ""]);
 
 	// exports
 

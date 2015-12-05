@@ -14,5 +14,5 @@ Start a Server
 
 Start Webpack & watch
 ```
-webpack -w
+npm start
 ```
