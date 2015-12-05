@@ -1,6 +1,9 @@
 $width: 500px;
 $height: 300px;
 $thickness: 4px;
+$white: #f1f1f1;
+$white-transparent: rgba(241, 241, 241, .5);
+$gold: #C59A5A;
 
 .card-container {
   position:fixed;
@@ -53,31 +56,69 @@ $thickness: 4px;
 
 .back {
 	transform: rotateY(180deg);
-  background-color:  #f1f1f1;
+  background-color: $white;
 }
 .right {
 	transform: rotateY(-270deg) translateZ($width - $thickness);
 	transform-origin: top right;
-    background-color: #C59A5A;
+    background-color: $gold;
 }
 .left {
 	transform: rotateY(270deg);
 	transform-origin: center left;
-  background-color: #C59A5A;
+  background-color: $gold;
 }
 .top {
 	transform: rotateX(-90deg) translateY(-$thickness);
 	transform-origin: top center;
-  background-color: #C59A5A;
+  background-color: $gold;
 }
 .bottom {
 	transform: translateY($height - $thickness) translateZ($thickness) rotateX(90deg);
 	transform-origin: bottom center;
-  background-color: #C59A5A;
+  background-color: $gold;
 }
 .front {
 	transform: translateZ($thickness);
-  background-color: #f1f1f1;
+  background-color: $white;
+}
+
+@media (max-width: 500px) {
+  .app {
+    height: 100vh !important;
+  }
+
+  .card-container {
+    max-width: 100%;
+    top: 0;
+    left: 0;
+    transform: none;
+    position: static;
+  }
+
+  .card {
+    transform: none !important;
+    box-shadow: none;
+    max-width: 100%;
+
+    .top,
+    .bottom,
+    .left,
+    .right {
+      display: none;
+    }
+
+    .front,
+    .back {
+      max-width: 100%;
+    }
+    .front {
+      background-color: $white-transparent;
+    }
+    .back {
+      transform: translateY($height);
+    }
+  }
 }
 
 // @keyframes spin {

@@ -2,9 +2,9 @@
   display: inline-block;
   position: relative;
   width: 50%;
-  padding-bottom: 60%; /* depends on svg ratio, for my zebra height/width = 1.2 so padding-bottom = 50% * 1.2 = 60% */
+  padding-bottom: 60%;
   z-index: 1;
-  vertical-align: middle; /* do what you want */
+  vertical-align: middle;
 }
 
 .my-svg{
@@ -12,7 +12,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%; /* only required for <img /> */
+  width: 100%;
   z-index: -1000;
 }
 
