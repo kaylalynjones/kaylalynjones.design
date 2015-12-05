@@ -13,13 +13,13 @@ body {
 }
 //full screen bkgrd image
 #app {
-  background-image: url('/images/pink-abstract.png');
+  background-image: url('/images/pink-abstract.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  background-attachment: fixed;
   width: 100%;
   height: 1000px;
-  height: 100vh;
 }
 
 // Typography

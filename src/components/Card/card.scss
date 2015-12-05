@@ -79,7 +79,7 @@ $thickness: 4px;
   background-color: #f1f1f1;
 }
 
-@keyframes spin {
-  0% { transform: rotate3d(0, 0, 0, 0); }
-  100% { transform: rotate3d(0, 1, 0, 180deg); }
-}
+// @keyframes spin {
+//   0% { transform: rotate3d(0, 0, 0, 0); }
+//   100% { transform: rotate3d(0, 1, 0, 180deg); }
+// }
