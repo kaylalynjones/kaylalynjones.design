@@ -1,0 +1,14 @@
+language: node_js
+node_js:
+  - "node"
+
+install:
+  npm install
+build:
+  npm run build
+
+deploy:
+  provider: s3
+  skip_cleanup: true
+  bucket: kaylalynjones.design
+  region: us-east-1
