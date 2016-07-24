@@ -1,0 +1,19 @@
+$med-blue: #2b71c3;
+
+.quote {
+    padding: 2rem;
+    margin: 0 auto;
+
+    h3 {
+        color: $med-blue;
+        font-size: 2rem;
+        font-weight: 100;
+        line-height: 2.7rem;
+    }
+    h4 {
+        color: $med-blue;
+        font-size: 1rem;
+        font-weight: 100;
+        text-align: right;
+    }
+}

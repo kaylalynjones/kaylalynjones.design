@@ -1,26 +1,4 @@
-.svg-container{
-  display: inline-block;
-  position: relative;
-  width: 50%;
-  padding-bottom: 60%;
-  z-index: 1;
-  vertical-align: middle;
-}
-
-.my-svg{
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: -1000;
-}
-
-.svg-container span{
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  opacity: 0;
+.resume-link {
+    display: block;
+    text-align: center;
 }
