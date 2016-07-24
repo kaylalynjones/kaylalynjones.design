@@ -23,7 +23,8 @@
   },
   "scripts": {
     "start": "webpack-dev-server",
-    "build": "webpack"
+    "clean": "rm -rf dist/",
+    "build": "webpack && cp -r fonts images index.html dist/"
   },
   "author": "@grandtraipse",
   "license": "ISC"

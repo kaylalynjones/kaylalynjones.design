@@ -7,12 +7,17 @@ Install Dependencies
 npm install
 ```
 
-Start a Server
-```
- http-server public/
-```
-
 Start Webpack & watch
 ```
 npm start
+```
+
+Start a Build
+```
+npm run build
+```
+
+Clean old Build Assets
+```
+npm run clean
 ```
