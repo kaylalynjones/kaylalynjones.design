@@ -1,12 +1,15 @@
-.title-svg-container {
-  position: relative;
-}
-.title-svg {
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%; /* only required for <img /> */
-  z-index: -1000;
-  margin-top: 100px;
+$med-blue: #2b71c3;
+
+.header {
+    position: relative;
+    text-align: center;
+
+    h1 {
+        font-size: 3rem;
+        color: $med-blue;
+    }
+    h2 {
+        font-size: 1.25rem;
+        font-weight: 100;
+    }
 }

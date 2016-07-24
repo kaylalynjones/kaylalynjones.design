@@ -3,122 +3,123 @@ $height: 300px;
 $thickness: 4px;
 $white: #f1f1f1;
 $white-transparent: rgba(241, 241, 241, .5);
-$gold: #C59A5A;
+$off-white: #E2E2E2;
 
 .card-container {
-  position:fixed;
-  perspective: 800px;
-	perspective-origin: 50% -100px;
-  width: $width;
-  left: 50%;
-  top: 50%;
-  transform: translateX(-50%) translateY(-50%);
+    position:fixed;
+    perspective: 800px;
+    perspective-origin: 50% -100px;
+    width: $width;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
 }
 
 .card {
-  position: relative;
-  width: $width;
-  height: $height;
-  transform-style: preserve-3d;
-  box-shadow: 0px 5px 20px 2px rgba(0, 0, 0, 0.3);
-  will-change: contents;
-
-  animation: spin 5s linear;
-  animation-delay: 2s;
-  animation-fill-mode: forwards;
-
-  .top,
-  .bottom,
-  .left,
-  .right,
-  .back,
-  .front {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-  }
-  .top,
-  .bottom {
-    width: $width;
-    height: $thickness;
-  }
-  .left,
-  .right {
-    height: $height;
-    width: $thickness;
-  }
-  .back,
-  .front {
+    position: relative;
     width: $width;
     height: $height;
-  }
-}
+    transform-style: preserve-3d;
+    box-shadow: 0px 5px 20px 2px rgba(0, 0, 0, 0.3);
+    will-change: contents;
 
-.back {
-	transform: rotateY(180deg);
-  background-color: $white;
-}
-.right {
-	transform: rotateY(-270deg) translateZ($width - $thickness);
-	transform-origin: top right;
-    background-color: $gold;
-}
-.left {
-	transform: rotateY(270deg);
-	transform-origin: center left;
-  background-color: $gold;
-}
-.top {
-	transform: rotateX(-90deg) translateY(-$thickness);
-	transform-origin: top center;
-  background-color: $gold;
-}
-.bottom {
-	transform: translateY($height - $thickness) translateZ($thickness) rotateX(90deg);
-	transform-origin: bottom center;
-  background-color: $gold;
-}
-.front {
-	transform: translateZ($thickness);
-  background-color: $white;
-}
-
-@media (max-width: 500px) {
-  .app {
-    height: 100vh !important;
-  }
-
-  .card-container {
-    max-width: 100%;
-    top: 0;
-    left: 0;
-    transform: none;
-    position: static;
-  }
-
-  .card {
-    transform: none !important;
-    box-shadow: none;
-    max-width: 100%;
+    animation: spin 5s linear;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
 
     .top,
     .bottom,
     .left,
+    .right,
+    .back,
+    .front {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+    .top,
+    .bottom {
+        width: $width;
+        height: $thickness;
+    }
+    .left,
     .right {
-      display: none;
+        height: $height;
+        width: $thickness;
+    }
+    .back,
+    .front {
+        width: $width;
+        height: $height;
+    }
+}
+
+.back {
+    transform: rotateY(180deg);
+    background-color: $white;
+}
+.right {
+    transform: rotateY(-270deg) translateZ($width - $thickness);
+    transform-origin: top right;
+    background-color: $off-white;
+}
+.left {
+    transform: rotateY(270deg);
+    transform-origin: center left;
+    background-color: $off-white;
+}
+.top {
+    transform: rotateX(-90deg) translateY(-$thickness);
+    transform-origin: top center;
+    background-color: $off-white;
+}
+.bottom {
+    transform: translateY($height - $thickness) translateZ($thickness) rotateX(90deg);
+    transform-origin: bottom center;
+    background-color: $off-white;
+}
+.front {
+    transform: translateZ($thickness);
+    background-color: $white;
+}
+
+@media (max-width: 500px) {
+    .app {
+        height: 100vh !important;
     }
 
-    .front,
-    .back {
-      max-width: 100%;
+    .card-container {
+        max-width: 100%;
+        top: 0;
+        left: 0;
+        transform: none;
+        position: static;
     }
-    .front {
-      background-color: $white-transparent;
+
+    .card {
+        transform: none !important;
+        box-shadow: none;
+        max-width: 100%;
+
+        .top,
+        .bottom,
+        .left,
+        .right {
+            display: none;
+        }
+
+        .front,
+        .back {
+            max-width: 100%;
+        }
+        .front {
+            background-color: #FFF;
+            margin-top: -1px;
+        }
+        .back {
+            transform: translateY($height);
+        }
     }
-    .back {
-      transform: translateY($height);
-    }
-  }
 }
 
 // @keyframes spin {

@@ -1,5 +1,6 @@
 import React from 'react';
 import Card from './Card/Card.jsx';
+import ScrollHelper from './ScrollHelper/ScrollHelper.jsx';
 import './app.scss';
 
 export default class App extends React.Component {
@@ -20,6 +21,7 @@ export default class App extends React.Component {
     return (
       <div className="app" style={{height:window.innerHeight * 3 + 'px'}}>
         <Card scrollPosition={this.state.scrollPosition} />
+        <ScrollHelper />
       </div>
     );
   }
