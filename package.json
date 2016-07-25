@@ -24,7 +24,7 @@
   "scripts": {
     "start": "webpack-dev-server",
     "clean": "rm -rf dist/",
-    "build": "webpack && cp -r fonts images index.html dist/"
+    "build": "webpack && cp -r fonts images index.html favicon.ico dist/"
   },
   "author": "@grandtraipse",
   "license": "ISC"
