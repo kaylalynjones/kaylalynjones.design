@@ -4,4 +4,12 @@
     flex-direction: row;
     justify-content: center;
     margin-top: 4rem;
+
+    i {
+        vertical-align: text-top;
+    }
+
+    .icon-github {
+        font-size: 1.2rem;
+    }
 }
